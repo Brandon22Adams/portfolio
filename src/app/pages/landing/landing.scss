@@ -1,11 +1,14 @@
 :host {
   width: 100%;
 }
-mat-divider {
-  border-top-width: medium;
+
+mat-icon {
+  height: 30px;
+  width: 30px;
+  font-size: 25px;
+  padding-left: 2.5px;
+  padding-top: 2.5px;
 }
-  mat-icon {
-    font-size: 30px;
-    padding-left: 5px;
-    padding-top: 5px;
-  }
+
+
+

@@ -1,11 +1,10 @@
 <div class="flex justify-center">
-  <div id="page-width" class="flex flex-row w-full">
-    <div class="min-w-[120px] max-w-[120px] w-[120px]">
-      <app-nav-bar></app-nav-bar>
-    </div>
+  <div id="page-width" class="w-full flex flex-col items-center">
+    <app-nav-bar [class]="isMobile ? 'fixed bottom-1 z-50' : 'sticky top-0'"></app-nav-bar>
+    <app-matrix-background></app-matrix-background>
     <router-outlet></router-outlet>
-    <div class="min-w-[120px] max-w-[120px] w-[120px]">
-
-    </div>
+    @if (isMobile) {
+    <div class="h-[48px] mt-4"></div>
+    }
   </div>
 </div>

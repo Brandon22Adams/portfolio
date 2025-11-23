@@ -1,46 +1,30 @@
-<div class="flex flex-col items-center">
-  <img src="me.jpg" alt="Picture of me" width="200" height="200" class="rounded-full mt-4">
-  <p class="text-4xl">Brandon Adams</p>
-  <p>Frontend Developer & Game Creator</p>
-  <div class="my-4">
-    <button matButton="outlined" class="mr-2">See my work</button>
-    <button matButton="outlined" class="ml-2">Contact me</button>
-  </div>
+<div class="flex justify-center">
+  <div class="flex flex-col items-center">
+    <img src="me.jpg" alt="Picture of me" width="200" height="200" class="rounded-full mt-4">
+    <p class="text-4xl">Brandon Adams</p>
+    <p>Frontend Developer & Game Creator</p>
+    <div class="my-4">
+      <button matButton="outlined" (click)="navigateTo(routeEnum.projects)" class="mr-2">See my work</button>
+      <button matButton="outlined" (click)="navigateTo(routeEnum.contact)" class="ml-2">Contact me</button>
+    </div>
 
-  <div class="pt-2 pb-4">
-    <mat-divider class="w-[200px] text-white"></mat-divider>
-  </div>
-
-  <div class="flex flex-row">
-    <mat-card class="w-1/2 mr-2">
-      <mat-card-header>
-        <mat-icon mat-card-avatar>web</mat-icon>
-        <mat-card-title>Hytale PoV</mat-card-title>
-        <mat-card-subtitle>Example website</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <img src="placeholder.svg">
-        Placeholder till I make the thing and find a new picture and stuff.
-      </mat-card-content>
-      <mat-card-actions>
-        <button matButton>More details</button>
-      </mat-card-actions>
-    </mat-card>
-
-    <mat-card class="w-1/2 ml-2">
-      <mat-card-header>
-        <mat-icon mat-card-avatar>gamepad</mat-icon>
-        <mat-card-title>Ghostie</mat-card-title>
-        <mat-card-subtitle>2d metroidvania game</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <img src="ghostie.png">
-
-        Ranked 15th out of 87 entries in a game jam. Designed and built entirely in Unity and C#.
-      </mat-card-content>
-      <mat-card-actions>
-        <button matButton>More details</button>
-      </mat-card-actions>
-    </mat-card>
+    <div class="flex flex-row">
+      @for(project of featuredProjects; track project.title) {
+      <mat-card class="w-1/2 mr-2">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>{{project.icon}}</mat-icon>
+          <mat-card-title>{{project.title}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <img [src]="project.imgSrc" [alt]="project.imgAlt"
+            [class]="isMobile ? 'w-[145px] h-[97px]' : 'w-[480px] h-[320px]'">
+          {{project.description}}
+        </mat-card-content>
+        <mat-card-actions>
+          <button matButton (click)="openProject(project.id)">More details</button>
+        </mat-card-actions>
+      </mat-card>
+      }
+    </div>
   </div>
 </div>

@@ -11,6 +11,10 @@ module.exports = {
         tertiary: '#F2F2F5'
       }
     },
+    screens: {
+      'mobile': { 'max': '767' },
+    }
   },
   plugins: [],
+  important: true,
 }

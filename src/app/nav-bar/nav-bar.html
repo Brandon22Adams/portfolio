@@ -1,18 +1,30 @@
-<div class="flex flex-col justify-around">
-  <button matFab extended class="nav-element mt-4">
+<div class="flex flex-row justify-around bg-gray-700 rounded-full py-1 mt-4 max-w-[500px]">
+  <button [matButton]="currentRoute === routeEnum.home ? 'filled' : ''" (click)="navigateTo(routeEnum.home)"
+    class="nav-element mx-1" [class]="isMobile ? 'px-3 py-1 text-sm' : ''">
+    @if(!isMobile) {
     <mat-icon>home</mat-icon>
+    }
     Home
   </button>
-  <button matFab extended class="nav-element mt-4">
+  <button [matButton]="currentRoute === routeEnum.about ? 'filled' : ''" (click)="navigateTo(routeEnum.about)"
+    class="nav-element mr-1" [class]="isMobile ? 'px-3 py-1 text-sm' : ''">
+    @if(!isMobile) {
     <mat-icon>person</mat-icon>
+    }
     About
   </button>
-  <button matFab extended class="nav-element mt-4">
+  <button [matButton]="currentRoute === routeEnum.projects ? 'filled' : ''" (click)="navigateTo(routeEnum.projects)"
+    class="nav-element" [class]="isMobile ? 'px-3 py-1 text-sm' : ''">
+    @if(!isMobile) {
     <mat-icon>code</mat-icon>
+    }
     Projects
   </button>
-  <button matFab extended class="nav-element mt-4">
+  <button [matButton]="currentRoute === routeEnum.contact ? 'filled' : ''" (click)="navigateTo(routeEnum.contact)"
+    class="nav-element mx-1" [class]="isMobile ? 'px-3 py-1 text-sm' : ''">
+    @if(!isMobile) {
     <mat-icon>contact_page</mat-icon>
+    }
     Contact
   </button>
 </div>
