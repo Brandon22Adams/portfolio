@@ -1,6 +1,6 @@
 <div class="flex justify-center">
   <div id="page-width" class="w-full flex flex-col items-center">
-    <app-nav-bar [class]="isMobile ? 'fixed bottom-1 z-50' : 'sticky top-0'"></app-nav-bar>
+    <app-nav-bar class="z-50" [class]="isMobile ? 'fixed bottom-1' : 'sticky top-0'"></app-nav-bar>
     <app-matrix-background></app-matrix-background>
     <router-outlet></router-outlet>
     @if (isMobile) {

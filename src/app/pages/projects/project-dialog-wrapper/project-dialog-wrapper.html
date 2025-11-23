@@ -1,1 +1,20 @@
-<p>project-dialog-wrapper works!</p>
+<div class="min-w-[500px] p-8">
+  <div class="flex justify-end">
+    <button matIconButton (click)="close()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  @if(data.id === projectIDs.sintas) {
+  <app-sintas-clayworks></app-sintas-clayworks>
+  } @else if (data.id === projectIDs.ghostie) {
+  <app-ghostie></app-ghostie>
+  } @else if (data.id === projectIDs.breakOut) {
+  <app-break-out></app-break-out>
+  } @else if (data.id === projectIDs.froge) {
+  <app-froge></app-froge>
+  } @else if (data.id === projectIDs.glitchWar) {
+  <app-glitch-war></app-glitch-war>
+  } @else if (data.id === projectIDs.toolBelt) {
+  <app-tool-belt></app-tool-belt>
+  }
+</div>
