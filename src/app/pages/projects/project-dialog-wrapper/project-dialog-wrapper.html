@@ -1,20 +1,26 @@
-<div class="min-w-[500px] p-8">
-  <div class="flex justify-end">
+<div class="min-w-[500px] min-h-[500px] p-8 relative">
+  <img [src]="currentProject?.imgSrc" [alt]="currentProject?.imgAlt"
+    class="absolute inset-0 w-full opacity-25 blur-sm" />
+  <div class="relative flex justify-end z-50">
     <button matIconButton (click)="close()">
       <mat-icon>close</mat-icon>
     </button>
   </div>
-  @if(data.id === projectIDs.sintas) {
-  <app-sintas-clayworks></app-sintas-clayworks>
-  } @else if (data.id === projectIDs.ghostie) {
-  <app-ghostie></app-ghostie>
-  } @else if (data.id === projectIDs.breakOut) {
-  <app-break-out></app-break-out>
-  } @else if (data.id === projectIDs.froge) {
-  <app-froge></app-froge>
-  } @else if (data.id === projectIDs.glitchWar) {
-  <app-glitch-war></app-glitch-war>
-  } @else if (data.id === projectIDs.toolBelt) {
-  <app-tool-belt></app-tool-belt>
-  }
+  <div class="relative z-10 mt-[-40px] max-h-[90vh]">
+    @if(currentProject?.id === projectIDs.sintas) {
+    <app-sintas-clayworks></app-sintas-clayworks>
+    } @else if (currentProject?.id === projectIDs.ghostie) {
+    <app-ghostie></app-ghostie>
+    } @else if (currentProject?.id === projectIDs.breakOut) {
+    <app-break-out></app-break-out>
+    } @else if (currentProject?.id === projectIDs.froge) {
+    <app-froge></app-froge>
+    } @else if (currentProject?.id === projectIDs.glitchWar) {
+    <app-glitch-war></app-glitch-war>
+    } @else if (currentProject?.id === projectIDs.toolPouch) {
+    <app-tool-pouch></app-tool-pouch>
+    } @else {
+    <p>Couldn't find project</p>
+    }
+  </div>
 </div>

@@ -1,0 +1,58 @@
+<div class="flex flex-col">
+  <h2 class="mb-4 text-3xl font-bold">ToolPouch</h2>
+
+  <div class="flex justify-between">
+    <div class="flex flex-row">
+      <span class="badge">
+        <mat-icon svgIcon="cSharp"></mat-icon>
+        <p>C#</p>
+      </span>
+    </div>
+    <button matButton color="primary" (click)="openProjectInNewTab()">View mod</button>
+  </div>
+
+  <mat-divider class="mb-4 mt-2"></mat-divider>
+
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What is Ghostie?</p>
+    <p class="mb-5">Me and my spouse got completely sucked into Stardew Valley. It was one of the first games we played
+      together after getting married, and before long we were playing almost every night. We ended up with hundreds of
+      hours in the game. I was really inspired by how much love and care went into Stardew itself, and even more
+      inspired when I discovered the modding community. Everyone was so helpful, supportive, and genuinely excited to
+      build on each other’s work.
+    </p>
+    <p>
+      I wanted to try modding for myself, so I joined the community Discord and spent time reading through their wikis
+      to learn how everything worked. The mod I created is called ToolPouch. It lets players store all their tools in a
+      single pouch to free up inventory space. With a configurable hotkey, they can open a radial menu and quickly swap
+      between tools without cluttering their inventory. Since release, the mod has reached more than 6,700 unique
+      downloads and has even inspired other modders to create expansions based on it.</p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">How I built Ghostie.</p>
+    <p class="mb-5">I built the mod using C# and SMAPI. Stardew has tons of exposed functions and systems you can hook
+      into, from player controls to UI elements, so there was a lot to learn. It was definitely challenging at first,
+      but the community was incredibly helpful and I slowly figured things out.</p>
+    <p>
+      Once I finished version 1 and posted it to Nexus, it quickly started getting attention. People submitted bug
+      reports, suggestions, and feature requests, so I kept improving it. I added more config options, fixed issues,
+      supported compatibility with other popular mods, and even added translations when people reached out wanting to
+      help. It has been really fun seeing other people build onto my mod and expand on the idea.
+    </p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What I learned.</p>
+    <p>This project taught me how to read and understand other people’s code and source files, and how to work backwards
+      to find exactly what I needed to hook into. I got better at digging through systems to figure out how to implement
+      the functionality I wanted. I also learned how valuable a strong community and clear documentation can be,
+      especially when you're stepping into an existing ecosystem.
+    </p>
+  </div>
+
+  <div class="flex flex-row my-4 justify-around">
+    <button matButton="filled" (click)="openProjectInNewTab()">View mod page</button>
+    <button matButton="filled" (click)="openGithubInNewTab()">View Github</button>
+  </div>
+
+  <app-carousel [images]="carouselImages"></app-carousel>
+</div>

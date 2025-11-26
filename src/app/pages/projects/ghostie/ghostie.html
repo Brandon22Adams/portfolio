@@ -1,4 +1,65 @@
-<p>ghostie works!</p>
+<div class="flex flex-col">
+  <h2 class="mb-4 text-3xl font-bold">Ghostie</h2>
+
+  <div class="flex justify-between">
+    <div class="flex flex-row">
+      <span class="badge">
+        <mat-icon svgIcon="unity"></mat-icon>
+        <p>Unity</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="cSharp"></mat-icon>
+        <p>C#</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="gimp"></mat-icon>
+        <p>Gimp</p>
+      </span>
+    </div>
+    <button matButton color="primary" (click)="openProjectInNewTab()">View game</button>
+  </div>
+
+  <mat-divider class="mb-4 mt-2"></mat-divider>
+
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What is Ghostie?</p>
+    <p class="mb-5">Metroidvania games are some of my favorite games to play. I especially love Hollow Knight and Ori
+      and the Blind
+      Forest. When I saw there was going to be a Metroidvania game jam, I figured it would be a great chance to finally
+      try making one myself. Since it was around Halloween, I decided to give it a spooky vibe with a ghost as the main
+      character. I also wanted it to be kid-friendly so my nieces and nephews could play it. Plus, it was way easier to
+      animate a floating ghost than a person.
+    </p>
+    <p>
+      The jam lasted 30 days, so I spent that month balancing work, life, and building a full game from concept to
+      release. The game ended up placing 15th out of 87 entries in the Metroidvania category. After reading all the
+      encouraging comments, I decided to keep going. I spent a few more months adding new assets, improving the
+      lighting, and making the world feel more alive. I eventually released the full version on itch.io for free because
+      I wanted as many people as possible to play it.</p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">How I built Ghostie.</p>
+    <p>At this point I was feeling pretty comfortable with Unity and C#, so that became the core of the project. One of
+      my big goals with this game was to push myself artistically. I spent a lot of time practicing and improving my
+      drawing skills and ended up creating every asset and animation myself. It was honestly one of the most fun parts
+      of the project.</p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What I learned.</p>
+    <p>This project showed me how important it is to have a real plan. With a deadline, I had to figure out when
+      systems, levels, and characters needed to be done so I had enough time to test everything and get it ready for
+      release. I also learned more about lighting, animation, and creating enemy AI. Overall, it helped me grow in both
+      game development and art, and gave me a better understanding of how to manage a full project from start to finish.
+    </p>
+  </div>
+
+  <div class="flex flex-row mb-4 justify-end">
+    <button matButton="filled" (click)="openProjectInNewTab()">View game page</button>
+  </div>
+
+  <app-carousel [images]="carouselImages"></app-carousel>
+</div>
+
 <!-- <div class="rain-container" [class]="isMobile ? 'w-[145px] h-[97px]' : 'w-[460px] h-[320px]'">
             <div class="raindrop"></div>
             <div class="raindrop"></div>

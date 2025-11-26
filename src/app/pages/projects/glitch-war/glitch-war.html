@@ -1,1 +1,60 @@
-<p>glitch-war works!</p>
+<div class="flex flex-col">
+  <h2 class="mb-4 text-3xl font-bold">Glitch War</h2>
+
+  <div class="flex justify-between">
+    <div class="flex flex-row">
+      <span class="badge">
+        <mat-icon svgIcon="unity"></mat-icon>
+        <p>Unity</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="cSharp"></mat-icon>
+        <p>C#</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="gimp"></mat-icon>
+        <p>Gimp</p>
+      </span>
+    </div>
+    <button matButton color="primary" (click)="openProjectInNewTab()">View game</button>
+  </div>
+
+  <mat-divider class="mb-4 mt-2"></mat-divider>
+
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What is GlitchWar?</p>
+    <p class="mb-5">Glitch War was my early attempt at becoming a full-time game developer. I wanted to create a
+      production-quality game that could be sold and help support myself financially. I spent some time prototyping and
+      gathering inspiration before settling on the concept. Glitch War is a unit-building game where you buy units with
+      different stats and send them down lanes to battle enemies who are sending their own units. The goal is to build
+      the ideal team, grow your production, and destroy the enemy’s portal.
+    </p>
+    <p>
+      I also added extra layers of gameplay, including an overworld between levels, puzzle levels, boss battles, and
+      hidden secrets throughout the world. To help fund development and release on Steam, I ran a Kickstarter to raise
+      $500 for assets and compensation for my time. The campaign exceeded expectations, raising over $800.</p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">How I built GlitchWar.</p>
+    <p>I built the project in Unity, using a mix of purchased assets and some I created myself. I designed systems for
+      units that allowed me to iterate quickly and balance their stats efficiently. I also created unique areas and
+      playable characters to keep the gameplay varied. After finishing development, I released the game on Steam for $1.
+      While the game was complete, I learned that marketing was a challenge. I didn’t spend enough time or resources
+      promoting it, which limited its reach.</p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What I learned.</p>
+    <p>This project taught me how challenging full production game development really is. I discovered that starting a
+      project and finishing it are often the hardest parts, while the middle of development the actual creation is the
+      sweet spot. I also gained experience with publishing, marketing, and the amount of work required to
+      successfully release a game. Glitch War gave me a real appreciation for everything involved in creating a
+      commercial game from start to finish.
+    </p>
+  </div>
+
+  <div class="flex flex-row mb-4 justify-end">
+    <button matButton="filled" (click)="openProjectInNewTab()">View steam game</button>
+  </div>
+
+  <app-carousel [images]="carouselImages"></app-carousel>
+</div>

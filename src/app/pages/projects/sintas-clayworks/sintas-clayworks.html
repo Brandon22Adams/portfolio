@@ -1,1 +1,67 @@
-<p>sintas-clayworks works!</p>
+<div class="flex flex-col">
+  <h2 class="mb-4 text-3xl font-bold">Sinta's Clayworks</h2>
+
+  <div class="flex justify-between">
+    <div class="flex flex-row">
+      <span class="badge">
+        <mat-icon svgIcon="angular"></mat-icon>
+        <p>Angular</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="express"></mat-icon>
+        <p>Express.js</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="mongoDB"></mat-icon>
+        <p>Mongo</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="oauth"></mat-icon>
+        <p>OAuth</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="stripe"></mat-icon>
+        <p>Stripe</p>
+      </span>
+    </div>
+    <button matButton color="primary" (click)="openGithubInNewTab()">View Github</button>
+  </div>
+
+  <mat-divider class="mb-4 mt-2"></mat-divider>
+
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What is Sinta's Polymer Clayworks?</p>
+    <p>
+      My spouse wanted to start her own polymer clay jewelry business and needed a website. Since I'm a professional web
+      developer, I decided to build one from scratch and make it easy for her to add new products, remove old ones, and
+      update the site whenever she wanted. She helped with the design, color schemes, and deciding what she wanted to
+      show on each page. From there, I built everything from the frontend and backend to the Mongo database and
+      deployment on DigitalOcean.</p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">How I built Sinta's Polymer Clayworks.</p>
+    <p class="mb-5">I built the site using Angular for the frontend, Express.js for the backend, MongoDB for the
+      database, and hosted everything through DigitalOcean. I integrated Stripe to handle payments and receipts, and I
+      added OAuth so my wife and I could log in and manage products directly from the site.</p>
+    <p>
+      I created a dynamic products page with filters based on whatever was in stock, along with filters for color,
+      shape, and style. I also added sorting and search options to make browsing easier. I built a full cart system that
+      connected to Stripe, handled payments, sent receipts, and notified us about what was ordered and where to ship
+      everything.
+    </p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What I learned.</p>
+    <p>This project taught me a lot about integration and working across the entire stack. Most of my professional
+      career has been focused on frontend development, but this project pushed me to learn how backends connect to
+      databases and how everything ties together on the hosting side. It helped me understand the full flow of data and
+      what it actually takes to build a complete website from start to finish.
+    </p>
+  </div>
+
+  <div class="flex flex-row mb-4 justify-end">
+    <button matButton="filled" (click)="openGithubInNewTab()">View Github</button>
+  </div>
+
+  <app-carousel [images]="carouselImages"></app-carousel>
+</div>

@@ -1,1 +1,58 @@
-<p>froge works!</p>
+<div class="flex flex-col">
+  <h2 class="mb-4 text-3xl font-bold">Froge</h2>
+
+  <div class="flex justify-between">
+    <div class="flex flex-row">
+      <span class="badge">
+        <mat-icon svgIcon="unity"></mat-icon>
+        <p>Unity</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="cSharp"></mat-icon>
+        <p>C#</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="gimp"></mat-icon>
+        <p>Gimp</p>
+      </span>
+    </div>
+    <button matButton color="primary" (click)="openProjectInNewTab()">View game</button>
+  </div>
+
+  <mat-divider class="mb-4 mt-2"></mat-divider>
+
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What is Froge?</p>
+    <p class="mb-5">Froge was the first game jam I ever entered. I had made a few small games before and wanted to test
+      my skills and see what I could do under pressure. The game jam theme was “frog,” and since I love platformers, I
+      decided to make a game where you jump from lily pad to lily pad. I didn’t want to just use a regular frog because
+      that felt a little too obvious, so I drew my dog wearing a frog hat instead. You play as her, hopping between lily
+      pads and collecting dog treats. The more treats you grab, the longer you survive and the more points you earn. The
+      jam only lasted three days over a weekend, so I had to work really fast.
+    </p>
+    <p>
+      After submitting, the game ended up ranking 28th in the “enjoyment” category out of 287 entries, which was a huge
+      confidence boost for my first game jam.</p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">How I built Froge.</p>
+    <p>I built the game in Unity since that was the engine I knew best. I used GIMP to draw all of the pixel art for the
+      game. The first day was spent building out all the core systems and getting the basic assets in place. The second
+      day was focused on fixing bugs and balancing the game so it actually felt fun. On the final day, I playtested,
+      refined what I could, and prepared the final build to submit.</p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What I learned.</p>
+    <p>This project taught me how important quick prototyping is to make sure the game is heading in the right
+      direction. I also learned not to cling to systems or ideas if they no longer make sense for the game. Games tend
+      to shape themselves as you build them, and sometimes they show you what’s fun and what isn’t. Being willing to
+      adapt ended up being one of the biggest lessons from this jam.
+    </p>
+  </div>
+
+  <div class="flex flex-row mb-4 justify-end">
+    <button matButton="filled" (click)="openProjectInNewTab()">View itch.io game</button>
+  </div>
+
+  <app-carousel [images]="carouselImages"></app-carousel>
+</div>

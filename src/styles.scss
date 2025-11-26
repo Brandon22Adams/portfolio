@@ -45,3 +45,26 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: "Fira Code", monospace; }
+
+// PROJECT MATERIAL OVERRIDES
+:root {
+  @include mat.divider-overrides((
+    width: 2px,
+    color: rgba(255, 255, 255, 0.671)
+  ));
+
+  @include mat.dialog-overrides((
+    container-max-width: 1000px,
+  ));
+}
+
+// Global classes
+.badge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 1rem;
+  p {
+    margin-left: .5rem;
+  }
+}

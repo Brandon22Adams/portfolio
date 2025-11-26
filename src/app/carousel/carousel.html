@@ -1,0 +1,31 @@
+<mat-divider class="mb-4 mt-2"></mat-divider>
+
+<div class="flex justify-center">
+  <div class="flex flex-row">
+    @for (image of allImages; track $index) {
+    <mat-icon>{{currentIndex === $index ? 'circle_circle' : 'circle'}}</mat-icon>
+    }
+  </div>
+</div>
+
+<div class="flex flex-row justify-between items-center my-4">
+  <div class="w-[56px]">
+    @if (currentIndex > 0) {
+    <button matFab (click)='getPrev()'><mat-icon>chevron_backward</mat-icon></button>
+    }
+  </div>
+  <div class="h-[450px] w-[450px] mx-4 overflow-hidden flex items-center justify-center bg-black">
+    @if(allImages[currentIndex].split('.')[1] === 'mp4') {
+    <video width="640" height="360" controls onloadstart="this.volume=0.3">
+      <source [src]="allImages[currentIndex]" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    } @else {
+    <img [src]="allImages[currentIndex]" alt="slide">
+    }
+  </div>
+  <div class="w-[56px]">
+    @if(currentIndex < listLength) { <button matFab (click)='getNext()'><mat-icon>chevron_forward</mat-icon></button>
+      }
+  </div>
+</div>

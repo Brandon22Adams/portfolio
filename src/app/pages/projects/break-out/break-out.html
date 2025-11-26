@@ -1,1 +1,56 @@
-<p>break-out works!</p>
+<div class="flex flex-col">
+  <h2 class="mb-4 text-3xl font-bold">Break Out</h2>
+
+  <div class="flex justify-between">
+    <div class="flex flex-row">
+      <span class="badge">
+        <mat-icon svgIcon="unity"></mat-icon>
+        <p>Unity</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="cSharp"></mat-icon>
+        <p>C#</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="gimp"></mat-icon>
+        <p>Gimp</p>
+      </span>
+    </div>
+    <button matButton color="primary" (click)="openProjectInNewTab()">View game</button>
+  </div>
+
+  <mat-divider class="mb-4 mt-2"></mat-divider>
+
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What is Breakout?</p>
+    <p>
+      Breakout is a Breakout inspired game also known as Arkanoid. Breakout has three iterations over the years. The
+      original Breakout was the second game I ever built, the first being a text-based adventure. I built it because it
+      was the only type of game my dad would play, so I wanted to make something he could enjoy. Over time, as I
+      developed prototypes and other games in my free time, I created three versions of Breakout. Only two are available
+      to play now, but each version built on what I had learned from the previous one. The first version had just a few
+      levels with a ball and paddle. The second added a level select and special abilities, and the final iteration
+      introduced enemy levels where you had to compete against an opposing paddle.</p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">How I built Breakout.</p>
+    <p>I built the game in Unity because it gave me the freedom to create any game I could imagine. I followed tutorials
+      to learn how to build the original game and how to design systems that could carry over into future projects. Each
+      iteration let me practice and refine both my technical skills and my understanding of game design.</p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What I learned.</p>
+    <p>This project showed me how important it is to have a real plan. With a deadline, I had to figure out when
+      systems, levels, and characters needed to be done so I had enough time to test everything and get it ready for
+      release. I also learned more about lighting, animation, and creating enemy AI. Overall, it helped me grow in both
+      game development and art, and gave me a better understanding of how to manage a full project from start to finish.
+    </p>
+  </div>
+
+  <div class="flex flex-row mb-4 justify-around">
+    <button matButton="filled" (click)="openProjectInNewTab()">View 2.0 game</button>
+    <button matButton="filled" (click)="openProject2InNewTab()">View vs game</button>
+  </div>
+
+  <app-carousel [images]="carouselImages"></app-carousel>
+</div>

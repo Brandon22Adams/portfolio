@@ -5,6 +5,19 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { Mobile } from './services/mobile';
 import { NavBarService } from './nav-bar/nav-bar-service';
 import { MatrixBackground } from "./matrix-background/matrix-background";
+import { DomSanitizer } from '@angular/platform-browser';
+
+const ICONS_CONST = [
+  'angular',
+  'cSharp',
+  'gimp',
+  'typeScript',
+  'unity',
+  'stripe',
+  'express',
+  'mongoDB',
+  'oauth',
+];
 
 @Component({
   selector: 'app-root',
@@ -15,13 +28,20 @@ import { MatrixBackground } from "./matrix-background/matrix-background";
 export class App {
   public isMobile: boolean = false;
 
-  constructor(matIconRegistry: MatIconRegistry, private mobileService: Mobile, private navBarService: NavBarService) {
+  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer, private mobileService: Mobile, private navBarService: NavBarService) {
     matIconRegistry.setDefaultFontSetClass('material-symbols-outlined');
   }
 
   public ngOnInit(): void {
     this.isMobile = this.mobileService.isMobileDevice();
     this.navBarService.initiateCurrentRoute();
+    this.registerIcons();
+  }
+
+  public registerIcons(): void {
+    ICONS_CONST.forEach((icon) => {
+      this.matIconRegistry.addSvgIcon(icon, this.domSanitizer.bypassSecurityTrustResourceUrl(`icons/${icon}.svg`));
+    });
   }
 
 }
