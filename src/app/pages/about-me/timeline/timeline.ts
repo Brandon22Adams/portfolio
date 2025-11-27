@@ -7,7 +7,7 @@ import { Mobile } from '../../../services/mobile';
 
 // { date: '', title: '', description: '' },
 const ALL_TIMELINE_DATA: ITimelineItem[] = [
-  { date: "September 1996", title: 'Birth', description: "I was born!" },
+  { date: "1996", title: 'Birth', description: "I am born!" },
   { date: "August 2011", title: 'First Class', description: "Took my first programming class in middle school and discovered I loved coding." },
   { date: "June 2015", title: 'Graduated Highschool', description: "Left on a service trip and was excited to start my programming journey." },
   { date: "August 2017", title: 'UVU', description: "Started college in the Computer Science program and learned to hate programming." },
