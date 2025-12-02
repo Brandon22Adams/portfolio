@@ -10,5 +10,17 @@ mat-icon {
   padding-top: 2.5px;
 }
 
+#logo {
+    opacity: 0;
+    transition: opacity 1.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+
+  &:hover #logo {
+    opacity: 1;
+  }
+}
 
 

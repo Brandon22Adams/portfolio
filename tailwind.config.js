@@ -9,7 +9,8 @@ module.exports = {
         primary: '#6B3FA0',
         secondary: '#EFBF04',
         tertiary: '#F2F2F5',
-        background: '#1C1B22'
+        background: '#1C1B22',
+        lightText: '#E8DFF5'
       }
     },
     screens: {

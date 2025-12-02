@@ -1,7 +1,7 @@
-<div class="grid gap-4 mt-4" [class]="isMobile ? 'grid-cols-1' : 'grid-cols-2'">
+<div class="grid gap-4 mt-4 pb-40 " [class]="isMobile ? 'grid-cols-1' : 'grid-cols-2'">
   @for(project of allProjects; track project.title) {
   <mat-card>
-    <mat-card-header>
+    <mat-card-header class="text-lightText">
       <mat-icon mat-card-avatar>{{project.icon}}</mat-icon>
       <mat-card-title>{{project.title}}</mat-card-title>
     </mat-card-header>

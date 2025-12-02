@@ -6,8 +6,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { Mobile } from '../../../services/mobile';
 
 // { date: '', title: '', description: '' },
+const LAST_DATA = { date: "1996", title: 'Birth', description: "I am born!" };
 const ALL_TIMELINE_DATA: ITimelineItem[] = [
-  { date: "1996", title: 'Birth', description: "I am born!" },
   { date: "August 2011", title: 'First Class', description: "Took my first programming class in middle school and discovered I loved coding." },
   { date: "June 2015", title: 'Graduated Highschool', description: "Left on a service trip and was excited to start my programming journey." },
   { date: "August 2017", title: 'UVU', description: "Started college in the Computer Science program and learned to hate programming." },
@@ -62,6 +62,7 @@ export class Timeline {
   private sortTimeline(): void {
     let sortedAndPreppedList: ITimelineItem[] = [];
     const sortedByDate = ALL_TIMELINE_DATA.sort((a, b) => this.parseMonthYear(b.date).getTime() - this.parseMonthYear(a.date).getTime());
+    sortedByDate.push(LAST_DATA); // Manually add last since there is no month
     if(this.mobileService.isMobileDevice()) {
       this.timelineData = sortedByDate;
       return;
