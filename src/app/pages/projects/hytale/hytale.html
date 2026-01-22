@@ -1,0 +1,57 @@
+<div class="flex flex-col">
+  <h2 class="mb-4 text-3xl font-bold">Hytale Mods</h2>
+
+  <div class="flex justify-between">
+    <div class="flex flex-row flex-wrap">
+      <span class="badge">
+        <mat-icon svgIcon="blockbench"></mat-icon>
+        <p>Block bench</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="java"></mat-icon>
+        <p>Java</p>
+      </span>
+    </div>
+    <button matButton color="primary" (click)="openProjectInNewTab()">View mod</button>
+  </div>
+
+  <mat-divider class="mb-4 mt-2"></mat-divider>
+
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What is Hytale Mods?</p>
+    <p class="mb-5">I have been following Hytale ever since it was announced back in 2018. Seeing how mods have always
+      been a central idea to Hytale has been so inspirational. Now, all the way in 2026, I'm finally seeing firsthand
+      just how mod friendly the game really is! There are so many systems, examples, and assets freely available for
+      people to modify, learn from, and run with brand new ideas.
+    </p>
+    <p>
+      So far, I've created three mods. The first was a helmet antler mod. I didn't like how the helmets in the game
+      covered my face, and I loved the look of the antlers on the deer! I was also inspired by Elden Ring, where my
+      favorite helmet was a pair of antlers. So I opened Blockbench for the first time, dug through the files, and made
+      my first mod! I released it on CurseForge, and it's gotten so much more love than I was expecting. I also made my
+      dog Mira in the game, so you can now run around as her! Lastly, I've been learning how to make brand new biomes.
+    </p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">How I built Hytale Mods.</p>
+    <p class="mb-5">There are so many systems in place that all of my mods so far have been made using tools released by
+      Hytale. The asset editor helped me create brand new helmets using the existing ones as reference. The new Mira
+      model was based on an existing model that I edited to better match her. Lastly, the biome editor is a visual
+      scripting tool that uses nodes to change how biomes spawn.
+    </p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What I learned.</p>
+    <p>The main thing I've learned so far from making these mods is that even when things feel overwhelming and full of
+      unknowns, I can still take it one step at a time and make something cool. I really needed the reminder of how much
+      I love creating and building new things. Hytale has been such a creative outlet for me, and I hope I can continue
+      to make better and better things with these incredible tools!
+    </p>
+  </div>
+
+  <div class="flex flex-row mb-4 justify-end">
+    <button matButton="filled" (click)="openProjectInNewTab()">View antler mod page</button>
+  </div>
+
+  <app-carousel [images]="carouselImages"></app-carousel>
+</div>

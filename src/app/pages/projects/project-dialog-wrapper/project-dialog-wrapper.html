@@ -7,7 +7,9 @@
     </button>
   </div>
   <div class="relative z-10 mt-[-40px] max-h-[90vh]">
-    @if(currentProject?.id === projectIDs.sintas) {
+    @if(currentProject?.id === projectIDs.hytale) {
+    <app-hytale></app-hytale>
+    } @else if(currentProject?.id === projectIDs.sintas) {
     <app-sintas-clayworks></app-sintas-clayworks>
     } @else if (currentProject?.id === projectIDs.ghostie) {
     <app-ghostie></app-ghostie>

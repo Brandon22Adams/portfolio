@@ -26,6 +26,8 @@ const ICONS_CONST = [
   'git',
   'itchio',
   'linkedin',
+  'blockbench',
+  'java'
 ];
 
 @Component({

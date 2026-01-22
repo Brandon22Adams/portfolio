@@ -13,10 +13,19 @@ export enum ProjectID {
   breakOut,
   froge,
   glitchWar,
-  toolPouch
+  toolPouch,
+  hytale
 }
 
 export const PROJECTS_CONST: Array<IProject> = [
+  {
+    id: ProjectID.hytale,
+    title: 'Hytale Mods',
+    icon: 'build',
+    imgSrc: 'hytale/biome.png',
+    imgAlt: 'Hytale mods',
+    description: 'Assortment of mods made for Hytale, ranging from new models, new biomes, and much more to come!',
+  },
   {
     id: ProjectID.ghostie,
     title: 'Ghostie',
