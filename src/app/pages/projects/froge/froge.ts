@@ -11,7 +11,7 @@ import { Carousel } from '../../../carousel/carousel';
   styleUrl: './froge.scss',
 })
 export class Froge {
-  public carouselImages: Array<string> = ['froge/frogeGameplay.gif', 'froge/coverArt.png', 'froge/miwa.jpg']
+  public carouselImages: Array<string> = ['froge/frogeGameplay.gif', 'froge/coverArt.png', 'froge/miwa.jpeg']
 
   public openProjectInNewTab(): void {
     window.open('https://codewordz.itch.io/froge', '_blank')?.focus()
