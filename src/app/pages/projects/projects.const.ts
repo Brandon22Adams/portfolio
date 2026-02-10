@@ -14,17 +14,26 @@ export enum ProjectID {
   froge,
   glitchWar,
   toolPouch,
-  hytale
+  hytale,
+  hytaleBiomes,
 }
 
 export const PROJECTS_CONST: Array<IProject> = [
   {
+    id: ProjectID.hytaleBiomes,
+    title: 'Hytale Biomes',
+    icon: 'build',
+    imgSrc: 'hytaleBiomes/voidMoon.png',
+    imgAlt: 'Hytale mods',
+    description: 'Many test and concept biomes created using the Hytale world gen v2!',
+  },
+  {
     id: ProjectID.hytale,
     title: 'Hytale Mods',
     icon: 'build',
-    imgSrc: 'hytale/biome.png',
+    imgSrc: 'hytale/antlers.png',
     imgAlt: 'Hytale mods',
-    description: 'Assortment of mods made for Hytale, ranging from new models, new biomes, and much more to come!',
+    description: 'Assortment of mods made for Hytale, Antler helmets and my dog Mira!',
   },
   {
     id: ProjectID.ghostie,

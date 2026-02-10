@@ -10,10 +10,11 @@ import { GlitchWar } from '../glitch-war/glitch-war';
 import { ToolPouch } from '../tool-pouch/tool-pouch';
 import { Mobile } from '../../../services/mobile';
 import { Hytale } from '../hytale/hytale';
+import { HytaleBiomes } from '../hytale-biomes/hytale-biomes';
 
 @Component({
   selector: 'app-project-dialog-wrapper',
-  imports: [MatIconModule, SintasClayworks, Ghostie, BreakOut, Froge, GlitchWar, ToolPouch, Hytale],
+  imports: [MatIconModule, SintasClayworks, Ghostie, BreakOut, Froge, GlitchWar, ToolPouch, Hytale, HytaleBiomes],
   templateUrl: './project-dialog-wrapper.html',
   styleUrl: './project-dialog-wrapper.scss',
 })

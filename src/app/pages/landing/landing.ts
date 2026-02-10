@@ -21,7 +21,7 @@ export class Landing {
 
   public isMobile: boolean = false;
   public routeEnum = routeEnum;
-  public featuredProjects: Array<IProject> = PROJECTS_CONST.filter((project) => project.id === ProjectID.hytale || project.id === ProjectID.ghostie);
+  public featuredProjects: Array<IProject> = PROJECTS_CONST.filter((project) => project.id === ProjectID.hytaleBiomes || project.id === ProjectID.hytale);
 
   private readonly dialog = inject(MatDialog);
 

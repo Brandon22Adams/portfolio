@@ -1,0 +1,44 @@
+<div class="flex flex-col">
+  <h2 class="mb-4 text-3xl font-bold">Hytale Mods</h2>
+
+  <div class="flex justify-between">
+    <div class="flex flex-row flex-wrap">
+      <span class="badge">
+        <mat-icon svgIcon="hytale"></mat-icon>
+        <p>Hytale</p>
+      </span>
+    </div>
+    <button matButton color="primary" (click)="openProjectInNewTab()">View mod</button>
+  </div>
+
+  <mat-divider class="mb-4 mt-2"></mat-divider>
+
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What is Hytale World gen v2?</p>
+    <p class="mb-5">World gen v2 is their second iteration on how worlds are built within Hytale. With this system of
+      tools people can make extremely diverse and beautiful landscapes that are randomly generated.
+    </p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">How I built Hytale Mods.</p>
+    <p class="mb-5">Hytale has created a system to generate biomes using a series of nodes! Using simplex, and cell
+      noise lots of math nodes some really incredible terrain shapes can be created. There is an extensive material
+      system, prefabs, and environmental variables on top to make truly unique worlds. Making worlds has been a
+      blast!
+    </p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What I learned.</p>
+    <p>The biggest hurdle I have had to overcome and learn was how to manipulate noise into different shapes. All of
+      their tooling and naming conventions were pretty straight forward but noise has been a tricky one to learn. Its
+      been the perfect balance of technical problem solving and visual feedback. Its why I fell in love with Frontend
+      Development and its why I have been enjoying building biomes.
+    </p>
+  </div>
+
+  <div class="flex flex-row mb-4 justify-end">
+    <button matButton="filled" (click)="openProjectInNewTab()">View Void biome mod page</button>
+  </div>
+
+  <app-carousel [images]="carouselImages"></app-carousel>
+</div>

@@ -12,7 +12,7 @@ import { Carousel } from '../../../carousel/carousel';
 })
 export class Hytale {
 
-  public carouselImages: Array<string> = ['hytale/antlers.png', 'hytale/biome.png', 'hytale/hytaleMira.png', 'hytale/miwa.jpeg']
+  public carouselImages: Array<string> = ['hytale/antlersMenu.png', 'hytale/hytaleMira.png', 'hytale/miwa.jpeg']
 
   public openProjectInNewTab(): void {
     window.open('https://www.curseforge.com/hytale/mods/antlers-helmet-additions', '_blank')?.focus()
