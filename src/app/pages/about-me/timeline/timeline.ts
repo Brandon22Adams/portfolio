@@ -16,7 +16,7 @@ const ALL_TIMELINE_DATA: ITimelineItem[] = [
   { date: "March 2018", title: 'BreakOut 2.0', description: "My third iteration of BreakOut, made for my dad." },
   { date: "January 2018", title: 'Boostability', description: "My first web job, building hundreds of static WordPress sites for clients." },
   { date: "June 2018", title: 'QA', description: "Started a QA role at DentalIntelligence to build their QA processes from scratch." },
-  { date: "January 2019", title: 'Jr Dev', description: "Got my first development job at DentalIntelligence and realized I love programming." },
+  { date: "January 2019", title: 'Jr Dev', description: "Got my first development job at DentalIntelligence!" },
   { date: "October 2020", title: 'GlitchWar', description: "Released my first game on Steam!" },
   { date: "August 2020", title: 'Kickstarter', description: "GlitchWar was successfully funded by incredible and supportive people." },
   { date: "February 2021", title: 'XenonChex', description: "Joined a startup as their only full-time Angular developer, building the main product." },

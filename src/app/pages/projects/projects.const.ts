@@ -25,7 +25,7 @@ export const PROJECTS_CONST: Array<IProject> = [
     icon: 'build',
     imgSrc: 'hytaleBiomes/voidMoon.png',
     imgAlt: 'Hytale mods',
-    description: 'Many test and concept biomes created using the Hytale world gen v2!',
+    description: 'World Gen v2 biome work focused on traversal, exploration, and dense environmental detail!',
   },
   {
     id: ProjectID.hytale,

@@ -16,7 +16,7 @@
     }
   </div>
   }
-  <div class="h-[450px] w-[450px] mx-4 overflow-hidden flex items-center justify-center bg-black">
+  <div class="h-[338px] w-[600px] mx-4 overflow-hidden flex items-center justify-center bg-black">
     @if(allImages[currentIndex].split('.')[1] === 'mp4') {
     <video width="640" height="360" controls onloadstart="this.volume=0.3">
       <source [src]="allImages[currentIndex]" type="video/mp4">

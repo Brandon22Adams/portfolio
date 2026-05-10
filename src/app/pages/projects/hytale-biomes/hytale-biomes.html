@@ -8,36 +8,69 @@
         <p>Hytale</p>
       </span>
     </div>
-    <button matButton color="primary" (click)="openProjectInNewTab()">View mod</button>
+    <span>
+      <button matButton color="primary" (click)="openSunspireProjectInNewTab()">View Sunspire mod</button>
+      <button matButton color="primary" (click)="openVoidProjectInNewTab()">View Void mod</button>
+    </span>
   </div>
 
   <mat-divider class="mb-4 mt-2"></mat-divider>
 
   <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
-    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What is Hytale World gen v2?</p>
-    <p class="mb-5">World gen v2 is their second iteration on how worlds are built within Hytale. With this system of
-      tools people can make extremely diverse and beautiful landscapes that are randomly generated.
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">World design philosophy</p>
+    <p class="mb-5">My design process focuses on guiding exploration naturally. I like to create terrain shapes, points
+      of interest, and environmental storytelling that reward curiosity and make players want to keep moving through an
+      area instead of seeing everything at a glance. When I place structures, landmarks, caves, or encounters I usually
+      start with questions like why is this here? Who built it? What role
+      does it play in the environment around it?
     </p>
   </div>
   <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
-    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">How I built Hytale Mods.</p>
-    <p class="mb-5">Hytale has created a system to generate biomes using a series of nodes! Using simplex, and cell
-      noise lots of math nodes some really incredible terrain shapes can be created. There is an extensive material
-      system, prefabs, and environmental variables on top to make truly unique worlds. Making worlds has been a
-      blast!
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">Sunspire Plateaus</p>
+    <p>Sunspire Plateaus was my entry for the Hytale New Worlds Modding Contest. I created a biome that felt
+      like it could exist naturally within Hytale's world but still had its own identity.
+      <br><br>
+      Sunspire Plateaus focuses heavily on exploration and environmental detail. Open plateaus transition into rivers,
+      tropical islands, cave systems, and smaller handcrafted spaces designed to reward the players
+      curiosity. A lot of the design process centered around making the world feel believable by thinking about why
+      structures existed, how players would move through the terrain, and what would make someone want to stay in the
+      area instead of leaving after a few minutes. To do that I created hidden encounters, glowing underground,
+      buried treasure, biome specific crafting materials, and rare structures were designed to pique players interest.
+      <br><br>
+      The project includes over 100 custom prefabs, 26 custom items, new structures and encounters, unique weather, all
+      tied directly into the biomes theme.
     </p>
   </div>
   <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
-    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What I learned.</p>
-    <p>The biggest hurdle I have had to overcome and learn was how to manipulate noise into different shapes. All of
-      their tooling and naming conventions were pretty straight forward but noise has been a tricky one to learn. Its
-      been the perfect balance of technical problem solving and visual feedback. Its why I fell in love with Frontend
-      Development and its why I have been enjoying building biomes.
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">Technical Experience With Hytale World Gen v2
+    </p>
+    <p class="mb-5">Most of my time with World Gen v2 has been focused on building terrain systems that feel natural to
+      explore while still being purpose driven.
+      <br><br>
+      A lot of my technical work has gone into terrain masking, cave generation, and controlling where features appear
+      within the world. One example of this is the cave systems in Sunspire Plateaus (see below). The caves are designed
+      to generate specifically within cliff faces and plateau walls instead of appearing underwater or breaking through
+      the terrain surface randomly. The goal was to make the generation feel natural and believable even though the
+      systems behind it are fairly complex, and intentional.
+      <br><br>
+      I also put a lot of focus into gameplay flow when building terrain. I wanted to make traversing cliffs, rivers,
+      caves, and
+      elevation changes in survival fun without constantly forcing the player to dig or
+      build around the terrain. A lot of the cave layouts and terrain transitions were created around ease of movement
+      and
+      exploration.
+      <br><br>
+      On the technical side I try to keep node trees organized, optimized, and maintainable. Systems are split into
+      separate files, cached where possible to avoid unnecessary processing, and kept updated with newer node workflows
+      instead of relying on deprecated systems. I enjoy the technical problem solving side of world generation just as
+      much as the visual side.
     </p>
   </div>
 
+
   <div class="flex flex-row mb-4 justify-end">
-    <button matButton="filled" (click)="openProjectInNewTab()">View Void biome mod page</button>
+    <button matButton="filled" (click)="openSunspireProjectInNewTab()">Sunspire Plateaus mod page</button>
+    <button matButton="filled" (click)="openVoidProjectInNewTab()" class="ml-2">Void biome mod page</button>
   </div>
 
   <app-carousel [images]="carouselImages"></app-carousel>
