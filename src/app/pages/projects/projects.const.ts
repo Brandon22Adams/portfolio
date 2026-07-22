@@ -26,7 +26,7 @@ export const PROJECTS_CONST: Array<IProject> = [
     icon: 'web',
     imgSrc: 'hytaleModReviews/homeRatio.png',
     imgAlt: 'Hytale Mod Reviews',
-    description: 'Nextjs application for reviewing Hytale mods.',
+    description: 'Nextjs application for reviewing Hytale mods, includes OAuth and community features.',
   },
   {
     id: ProjectID.hytaleBiomes,
