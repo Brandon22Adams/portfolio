@@ -29,6 +29,8 @@ const ICONS_CONST = [
   'blockbench',
   'java',
   'hytale',
+  'nextjs',
+  'react',
 ];
 
 @Component({

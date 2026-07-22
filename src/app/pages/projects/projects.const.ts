@@ -16,9 +16,18 @@ export enum ProjectID {
   toolPouch,
   hytale,
   hytaleBiomes,
+  hytaleModReviews,
 }
 
 export const PROJECTS_CONST: Array<IProject> = [
+  {
+    id: ProjectID.hytaleModReviews,
+    title: 'Hytale Mod Reviews',
+    icon: 'web',
+    imgSrc: 'hytaleModReviews/homeRatio.png',
+    imgAlt: 'Hytale Mod Reviews',
+    description: 'Nextjs application for reviewing Hytale mods.',
+  },
   {
     id: ProjectID.hytaleBiomes,
     title: 'Hytale Biomes',

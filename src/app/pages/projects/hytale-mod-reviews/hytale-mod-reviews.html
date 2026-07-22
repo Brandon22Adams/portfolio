@@ -1,0 +1,90 @@
+<div class="flex flex-col">
+  <h2 class="mb-4 text-3xl font-bold">Hytale Mod Reviews</h2>
+
+  <div class="flex justify-between">
+    <div class="flex flex-row flex-wrap">
+      <span class="badge">
+        <mat-icon svgIcon="nextjs"></mat-icon>
+        <p>Next.js</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="react"></mat-icon>
+        <p>React</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="mongodb"></mat-icon>
+        <p>MongoDB</p>
+      </span>
+      <span class="badge">
+        <mat-icon svgIcon="hytale"></mat-icon>
+        <p>Hytale</p>
+      </span>
+    </div>
+    <button matButton color="primary" (click)="openProjectInNewTab()">View website</button>
+  </div>
+
+  <mat-divider class="mb-4 mt-2"></mat-divider>
+
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What is Hytale Mod Reviews?</p>
+    <p class="mb-5">After spending a lot of time making mods and joining Hytale modding competitions, I noticed
+      something that always bothered me. I never really got feedback on how my mods were doing! I'd put a lot of work
+      into a project, submit it, and then be left wondering what people actually thought about it. The more I talked
+      with other community members, the more I realized I wasn't the only one feeling that way.
+    </p>
+    <p class="mb-5">
+      That's what inspired me to create Hytale Mod Reviews! The idea is simple: give creators a place where they can
+      upload their mods and get meaningful feedback from other community members. The website uses Hytale OAuth, so
+      there's no account creation process, and reviews are built around rubrics instead of simple ratings. Different
+      types of mods can have different categories and review criteria, helping creators get feedback in the areas that
+      matter most for their specific project.
+    </p>
+    <p>
+      The goal isn't to tell people whether their mod is "good" or "bad." It's to help creators learn, improve, and get
+      the kind of feedback I always wished I had when sharing my own work.
+    </p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">How I built Hytale Mod Reviews.</p>
+    <p class="mb-5">This was my first project built with React and Next.js. I've always believed I could learn whatever
+      frontend framework I needed, but I wanted to prove that to myself by building something real from start to finish.
+      Since I was already solving a problem I cared about, this project felt like the perfect opportunity.
+    </p>
+    <p class="mb-5">
+      The website is powered by MongoDB and deployed on Vercel. I built the mod submission system, category-based
+      reviews and rubrics, notifications, comment threads and replies, leaderboards, browsing and filtering tools, and a
+      review queue that helps users find mods they haven't reviewed yet. I also created a full set of admin tools for
+      managing categories, tags, users, events, news posts, notifications, and direct conversations with community
+      members. Along the way, I added security measures to help protect the platform from bad actors and abuse.
+    </p>
+    <p>
+      I did use AI tools throughout development to help speed up my learning of React and Next.js concepts. They were
+      especially helpful for translating some of my Angular knowledge into React patterns, but the application's
+      architecture, database design, API routes, and features were all things I built and worked through myself.
+    </p>
+  </div>
+  <div class="mb-6 bg-black bg-opacity-75 p-2 rounded-lg">
+    <p class="text-lg border-b-[1px] mb-1 border-purple-300 inline-block">What I learned.</p>
+    <p class="mb-5">The biggest thing I learned from this project is that good development skills transfer between
+      technologies much
+      more than I used to think. React and Next.js definitely have their own ways of doing things, but once I got
+      comfortable with the fundamentals, I found myself solving problems the same way I always have.
+    </p>
+    <p class="mb-5">
+      I also learned a lot about how larger React applications are structured, how Next.js organizes projects, and how
+      to connect everything together into a production application. Building features like notifications, moderation
+      tools, leaderboards, and review systems pushed me far beyond a small proof of concept.
+    </p>
+    <p>
+      The website has only been live for a short time, but it's already being used by members of the community. Seeing
+      people upload their work, leave feedback, and start conversations has been incredibly rewarding. More than
+      anything, this project reminded me how much I enjoy building things that solve real problems for people.
+    </p>
+  </div>
+
+  <div class="flex flex-row mb-4 justify-end">
+    <button matButton="filled" (click)="openProjectInNewTab()">View react website</button>
+  </div>
+
+  <app-carousel [images]="carouselImages"></app-carousel>
+</div>

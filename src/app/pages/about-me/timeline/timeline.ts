@@ -28,7 +28,10 @@ const ALL_TIMELINE_DATA: ITimelineItem[] = [
   { date: "June 2024", title: 'ToolPouch', description: "Created a Stardew Valley mod that gained a lot of support." },
   { date: "September 2025", title: 'Flagship Released', description: "The project I’ve been leading is now in production for many clients." },
   { date: "November 2025", title: 'Portfolio', description: "Built this portfolio to practice Angular and push my skills further." },
-  { date: "January 2026", title: 'Hytale Mods', description: "Started building mods for the new Hytale Game!" }
+  { date: "January 2026", title: 'Hytale Mods', description: "Started building mods for the new Hytale Game!" },
+  { date: "March 2026", title: 'Hytale New Worlds Competition', description: "Won mid contest drop!" },
+  { date: "June 2026", title: 'Hytale modjam', description: "Joined a modjam for Hytale and created a new mod." },
+  { date: "July 2026", title: 'Hytale Mod Reviews', description: "Created Nextjs website for feedback and community engagement." }
 ];
 
 

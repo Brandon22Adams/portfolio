@@ -9,6 +9,8 @@
   <div class="relative z-10 mt-[-40px] max-h-[90vh]">
     @if (currentProject?.id === projectIDs.hytaleBiomes) {
     <app-hytale-biomes></app-hytale-biomes>
+    } @else if(currentProject?.id === projectIDs.hytaleModReviews) {
+    <app-hytale-mod-reviews></app-hytale-mod-reviews>
     } @else if(currentProject?.id === projectIDs.hytale) {
     <app-hytale></app-hytale>
     } @else if(currentProject?.id === projectIDs.sintas) {
